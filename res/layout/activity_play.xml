@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/credentials_backgrund"
+    tools:context=".PlayActivity" >
+
+    <Button
+        android:id="@+id/SFLS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="10dp"
+        android:text="Set First Large Ship"
+        android:background = "@drawable/round_button" />
+
+    <Button
+        android:id="@+id/SFSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SSSS"
+        android:text="Set First Small Ship"
+        android:textSize="10dp"
+        android:background = "@drawable/round_button" />
+
+    <Button
+        android:id="@+id/SSLS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SFSS"
+        android:text="Set Second Large Ship"
+        android:textSize="10dp"
+        android:background = "@drawable/round_button" />
+
+    <Button
+        android:id="@+id/SSSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SFLS"
+        android:text="Set Second Small Ship"
+        android:textSize="10dp"
+        android:background = "@drawable/round_button" />
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="45dp" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SSLS"
+        android:text="Play"
+        android:background = "@drawable/round_button" />
+
+</RelativeLayout>
